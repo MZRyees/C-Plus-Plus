@@ -1,4 +1,12 @@
-#include <iostream>
+// Question:
+// Write a C++ program using a class named Distance to add two distances
+// given in feet and inches. If the total inches are 12 or more,
+// convert the extra inches into feet.
+// For example:
+// Distance 1 = 5 feet 8 inches
+// Distance 2 = 3 feet 7 inches
+// Result = 9 feet 3 inches.
+#include<iostream>
 using namespace std;
 class Distance
 {
@@ -36,7 +44,7 @@ public:
         temp.convert();
 
         // Return answer
-        return temp;
+        return temp;-
     }
 
     // Display function
