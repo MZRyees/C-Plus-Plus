@@ -9,7 +9,8 @@ class Base{
     char d;
 };
 class Derived : public Base{
-    public:
+    // public:
+    protected:
     void GetData(){
     cout<<"Kindly enter the value of b and c:";
     cin>>b;
@@ -28,4 +29,5 @@ int main(){
     obj1.d= 'k';
     cout<<"The value of d is:"<<obj1.d<<endl;
     // obj1.a = 8; It also inaccessible because it is defined in the private member of the Base class
+    /*if we make the the second class protected then we can not access the member of the class because the accessibility of the protected member of the class is inside the class. we can only access the public member of the class from outside the class. But we can easily inherit the protected  member of the base class in derived class. */
 }
