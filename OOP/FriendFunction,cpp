@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+ class A{
+     int a;
+      public:
+        A(){ 
+            a = 89;
+        }
+        void friend show (A,B);
+    };
+    class B{
+    int b;
+    public:
+    B(int c): b(c) {}
+     void friend show (A,B);
+};
+void show(A x, B y){
+    int r;
+    r = x.a+y.b;
+    cout<<"The value of a is:"<<x.a<<endl;
+    cout<<"The value of b is:"<<y.b<<endl;
+    cout<<"The Sum of a and b is:"<<r<<endl;
+}
+int main(){
+   A obja;
+   B objb(8);
+   show(obja,objb);
+}

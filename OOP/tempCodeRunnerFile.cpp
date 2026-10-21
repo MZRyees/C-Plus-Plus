@@ -1,1 +1,1 @@
-Shape S;
+prado.show();
